@@ -1,0 +1,41 @@
+.calculator{
+    display:flex;
+    justify-content: center;
+    margin:5em;
+
+}
+
+.calculator-keys{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.calculator-keys button:not(.operator){
+    background-color: lightgray;
+}
+
+.calculator-keys button, div{
+    padding: 1.5em;
+}
+
+.calculator-display{
+    grid-column: span 4;
+    border: solid black;
+    text-align: center;
+}
+
+ 
+
+
+.operator{
+    background-color: orange;
+}
+
+.zero{
+    grid-column: span 2;
+}
+
+.clear-button{
+    grid-column: span 3;
+}
