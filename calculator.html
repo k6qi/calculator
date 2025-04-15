@@ -5,37 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kevin's Calculator </title>
     <link rel="stylesheet" href="calculator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="calculator-container">
-        <div id="display">DISPLAY</div>
-        <button class="btn special"> AC </button>
-        <button class="btn special"> +/- </button>
-        <button class="btn special"> % </button>
-        <button class="btn operator"> / </button>
-        <button class="btn number"> 7 </button>
-        <button class="btn number"> 8 </button>
-        <button class="btn number"> 9 </button>
-        <button class="btn operator"> * </button>
-        <button class="btn number"> 4 </button>
-        <button class="btn number"> 5 </button>
-        <button class="btn number"> 6 </button>
-        <button class="btn operator"> - </button>
-        <button class="btn number"> 1 </button>
-        <button class="btn number"> 2 </button>
-        <button class="btn number"> 3 </button>
-        <button class="btn operator"> + </button>
-        <button id="zero-btn"> 0 </button>
-        <button id="decimal-btn">.</button>
-        <button class="btn operator"> = </button>
-
-
-        
-
-
-
-
-
+    <div id="parent">
+        <h1 id="title"> Kevin's Odin Calculator</h1>
+        <div id="calculator-container">
+            <div id="display">0</div>
+            <button class="btn special" data-value = "clear"> AC </button>
+            <button class="btn special" data-value="backspace"> DEL </button>
+            <button class="btn special" data-value="plus-minus"> +/- </button>
+            <button class="btn operator" data-value="/"> / </button>
+            <button class="btn number" data-value="7"> 7 </button>
+            <button class="btn number" data-value="8"> 8 </button>
+            <button class="btn number" data-value="9"> 9 </button>
+            <button class="btn operator" data-value="*"> * </button>
+            <button class="btn number" data-value="4"> 4 </button>
+            <button class="btn number" data-value="5"> 5 </button>
+            <button class="btn number" data-value="6"> 6 </button>
+            <button class="btn operator" data-value="-"> - </button>
+            <button class="btn number" data-value="1"> 1 </button>
+            <button class="btn number" data-value="2"> 2 </button>
+            <button class="btn number" data-value="3"> 3 </button>
+            <button class="btn operator" data-value="+"> + </button>
+            <button class="btn number zero-btn" data-value="0"> 0 </button>
+            <button id="decimal-btn" data-value=".">.</button>
+            <button class="btn equal" data-value="="> = </button>
+        </div>
 
     </div>
 <script src="calculator.js"> </script>

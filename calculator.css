@@ -1,3 +1,20 @@
+body{
+    background-color:rgb(94, 171, 223);
+}
+
+#title{
+    font-family: "Jersey 15", sans-serif;
+    letter-spacing: 0.25rem;
+    font-size: 2rem;
+    color: white;
+
+}
+#parent{
+    display: flex;    
+    align-items: center;
+    margin-top:1.5rem;
+    flex-direction: column;
+}
 
 #calculator-container{
     display:grid;
@@ -6,6 +23,9 @@
     max-width: 520px;
     background-color: black;
     border-radius:1.3rem;
+    padding: 1.1rem;
+    min-width: 520px;
+
 }
 
 
@@ -18,17 +38,20 @@
     background-color: black;
     color: white;
     border-radius:1.3rem;
+    font-family: "Jersey 15", sans-serif;
+    font-size: 2.5rem;
 
 }
 
-#zero-btn{
-    grid-column: span 2;
-}
+
 
 .btn, #decimal-btn, #zero-btn{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     background-color: #2b2b2b;
     color:white;
+    font-family: "Jersey 15", sans-serif;
+    
+
 }
 
 .special{
@@ -36,16 +59,16 @@
     color:black;
 }
 
-.operator{
+.operator, .equal{
     background-color: #ff8800;
     color: white;
 }
 
-.number:hover, #zero-btn:hover, #decimal-btn:hover{
+.number:hover, .zero-btn:hover, #decimal-btn:hover {
     background-color:#4d4d4d;
 }
 
-.operator:hover{
+.operator:hover, .equal:hover{
     color: #ff8800;
     background-color: white;
 }   
@@ -54,8 +77,28 @@
     background-color: white;
 }
 
+.number:active, .zero-btn:active, #decimal-btn:active{
+    background-color: #201f1f;
+}
+
+.operator:active, .equal:active{
+    background-color: rgb(219, 218, 218);
+}
+
+.special:active{
+    background-color:rgb(207, 205, 205);
+}
+
+.operator, .special, #decimal-btn, .number, .equal{
+    cursor: pointer;
+}
+
 button{
     border-radius: 1.5rem;
     margin: 0.5rem;
     border: none;
+}
+
+.zero-btn{
+    grid-column: span 2;
 }
